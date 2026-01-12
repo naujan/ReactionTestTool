@@ -1,7 +1,7 @@
 
 # ReactionTimeTool
 Script for automating [human benchmark reaction time test](https://humanbenchmark.com/tests/reactiontime) 
-Made for fun, educational purposes.
+Made for fun, educational purposes. Made on/for Windows.
 ## 📌 Note
 - It reads current location of the pointer, then gets the color behind it. This script uses fixed targetColor, meaning that it will work ONLY on humanbenchmark. (Or anywhere if the RGB value is the same.)
 - This is one of my first actual projects - it is not fully optimized. Please let me know if it affects performance.
