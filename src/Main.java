@@ -21,13 +21,16 @@ public class Main {
             Color currentColor = mouse.getPixelColor(point.x, point.y);
 
             if (currentColor.equals(targetColor)) {
+
+                // CLICKING THE SCREEN
                 System.out.println("TEST #" + roundCounter);
                 System.out.println("Color change detected!");
                 mouse.mousePress(MouseEvent.BUTTON1_DOWN_MASK);
                 mouse.mouseRelease(MouseEvent.BUTTON1_DOWN_MASK);
 
-                Thread.sleep(50);
+                Thread.sleep(50); // TO PREVENT DOUBLE-CLICKING
 
+                // NEXT TEST
                 System.out.println("Clicked, waiting for next...\n");
                 mouse.mousePress(MouseEvent.BUTTON1_DOWN_MASK);
                 mouse.mouseRelease(MouseEvent.BUTTON1_DOWN_MASK);
